@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import Logo from "../../images/logo.png";
+import Logo from "../../images/Megift-logo.png";
 import { Link } from "react-router-dom";
 import MobileMenu from "../../components/MobileMenu";
 import min3 from "../../images/shop/mini-cart/bee2.png";
