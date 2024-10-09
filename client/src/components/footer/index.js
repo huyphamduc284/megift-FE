@@ -60,10 +60,11 @@ const Footer = (props) => {
                       D1, Long Thạnh Mỹ, Thành Phố Thủ Đức, Hồ Chí Minh
                     </li>
                     <li>
-                      <i className="fi flaticon-call"></i>84+ 792280401
+                      <i className="fi flaticon-call"></i>84+ 822882419
                     </li>
                     <li>
-                      <i className="fi flaticon-envelope"></i>megift@gmail.com
+                      <i className="fi flaticon-envelope"></i>
+                      megift.ladia@gmail.com
                     </li>
                   </ul>
                 </div>
