@@ -44,11 +44,11 @@ const HomePage = ({ addToCart, addToWishList }) => {
         addToWishListProduct={addToWishListProduct}
         products={products}
       />
-      {/* <Project /> */}
+      <Project />
       {/* <Service /> */}
-      <Testimonial />
+      {/* <Testimonial /> */}
       {/* <Client /> <br></br> */}
-      <BlogSection />
+      {/* <BlogSection /> */}
       <Footer />
       <Scrollbar />
     </Fragment>
