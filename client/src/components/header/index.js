@@ -173,9 +173,9 @@ class Header extends Component {
                       </ul>
                     </li>
                     <li>
-                      <Link onClick={ClickHandler} to="/">
+                      {/* <Link onClick={ClickHandler} to="/">
                         Blog
-                      </Link>
+                      </Link> */}
                       <ul className="sub-menu">
                         <li>
                           <Link onClick={ClickHandler} to="/blog">
