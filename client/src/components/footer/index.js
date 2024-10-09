@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../images/logo.png";
+import Logo from "../../images/Megift-logo.png";
 
 const Footer = (props) => {
   const ClickHandler = () => {
@@ -20,10 +20,10 @@ const Footer = (props) => {
                   </Link>
                 </div>
                 <p>
-                  Management consulting includes a broad range of activities,
-                  and the many firms and their members often define these
-                  practices.
+                  We offer a stunning range of handcrafted jewelry, designed to
+                  add elegance to any occasion.
                 </p>
+
                 <ul>
                   <li>
                     <Link onClick={ClickHandler} to="/">
@@ -56,14 +56,14 @@ const Footer = (props) => {
                 <div className="contact-ft">
                   <ul>
                     <li>
-                      <i className="fi flaticon-pin"></i>7 Green Lake Street
-                      Crawfordsville, IN 47933
+                      <i className="fi flaticon-pin"></i>Lô E2a-7, Đường D1, Đ.
+                      D1, Long Thạnh Mỹ, Thành Phố Thủ Đức, Hồ Chí Minh
                     </li>
                     <li>
-                      <i className="fi flaticon-call"></i>+1 800 123 456 789
+                      <i className="fi flaticon-call"></i>84+ 792280401
                     </li>
                     <li>
-                      <i className="fi flaticon-envelope"></i>Annahl@gmail.com
+                      <i className="fi flaticon-envelope"></i>megift@gmail.com
                     </li>
                   </ul>
                 </div>
