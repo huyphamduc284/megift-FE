@@ -228,9 +228,13 @@ class Header extends Component {
                       </Link>
                     </li>
                     <li>
-                      <Link onClick={ClickHandler} to="/custom">
+                      <a
+                        href="https://megift-custom.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         Custom
-                      </Link>
+                      </a>
                     </li>
                     <li>
                       <Link onClick={ClickHandler} to="/subscription">
