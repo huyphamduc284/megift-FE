@@ -1,0 +1,122 @@
+/* Phân trang (Pagination) */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 8px;
+}
+
+.pagination-list li {
+  display: inline;
+}
+
+.pagination-list li button {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+.pagination-list li.active button {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.pagination-list li button:hover {
+  background-color: #e2e6ea;
+}
+
+/* Tabs */
+.nav-tabs {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+
+.nav-tabs .nav-link {
+  border: 1px solid transparent;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff #007bff transparent;
+}
+
+.nav-tabs .nav-link i {
+  font-size: 18px;
+}
+
+/* Thông tin sản phẩm */
+.shoping-product span {
+  display: block;
+  margin: 10px 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Danh sách sản phẩm */
+.shop-filter-wrap {
+  margin-bottom: 20px;
+}
+
+/* Nút tìm kiếm */
+.shop-filter-search input {
+  width: calc(100% - 40px);
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.shop-filter-search button {
+  width: 40px;
+  border: 1px solid #ddd;
+  background-color: #007bff;
+  color: white;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.shop-filter-search button:hover {
+  background-color: #0056b3;
+}
+
+/* Màu sắc */
+.color-name ul {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+  padding: 0;
+}
+
+.color-name li input[type="radio"] {
+  display: none;
+}
+
+.color-name li label {
+  width: 30px;
+  height: 30px;
+  display: block;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.color-name li label:hover {
+  transform: scale(1.1);
+}
