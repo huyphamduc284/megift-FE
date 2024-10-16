@@ -1,26 +1,13 @@
 import React from "react";
 
 const prices = [
-  {
-    id: 1,
-    min: 50,
-    max: 100,
-  },
-  {
-    id: 2,
-    min: 100,
-    max: 200,
-  },
-  {
-    id: 3,
-    min: 200,
-    max: null,
-  },
+  { id: 1, min: 50000, max: 100000 },
+  { id: 2, min: 100000, max: 200000 },
+  { id: 3, min: 200000, max: null },
 ];
 
 const sizes = ["small", "medium", "large"];
-const colors = ["fff", "000", "cf1105"];
-const brands = ["flower", "hill", "forest"];
+const colors = ["fff", "000", "cf1105", "dd2202", "aa3301", "cc5506", "ff7702"];
 
 const FilterSidebar = ({ filter, changeHandler, priceChangeHandler }) => {
   return (
@@ -28,14 +15,14 @@ const FilterSidebar = ({ filter, changeHandler, priceChangeHandler }) => {
       <div className="shop-filter-wrap">
         <div className="filter-item">
           <div className="shop-filter-item">
-            <h2>Search</h2>
+            <h2>Tìm kiếm</h2>
             <div className="shop-filter-search">
               <form>
                 <div>
                   <input
                     type="text"
                     className="form-control"
-                    placeholder="Search"
+                    placeholder="Tìm kiếm"
                   />
                   <button type="submit">
                     <i className="ti-search"></i>
@@ -45,16 +32,17 @@ const FilterSidebar = ({ filter, changeHandler, priceChangeHandler }) => {
             </div>
           </div>
         </div>
+
         <div className="filter-item">
           <div className="shop-filter-item">
-            <h2>Price</h2>
+            <h2>Giá</h2>
             <ul>
               <li>
                 <label className="topcoat-radio-button__label">
-                  All prices
+                  Tất cả giá
                   <input
                     type="radio"
-                    value={""}
+                    value=""
                     checked={!filter.price}
                     name="price"
                     onChange={changeHandler}
@@ -63,12 +51,14 @@ const FilterSidebar = ({ filter, changeHandler, priceChangeHandler }) => {
                 </label>
               </li>
               {prices.map((price) => (
-                <li>
+                <li key={price.id}>
                   <label className="topcoat-radio-button__label">
-                    ${price.min} {price.max ? "- $" : ""}
-                    {price.max || " and more"}
+                    {price.min.toLocaleString("vi-VN")} VND{" "}
+                    {price.max
+                      ? `- ${price.max.toLocaleString("vi-VN")} VND`
+                      : "trở lên"}
                     <input
-                      checked={filter.price.id === price.id}
+                      checked={filter.price?.id === price.id}
                       type="radio"
                       value={JSON.stringify(price)}
                       onChange={priceChangeHandler}
@@ -81,13 +71,14 @@ const FilterSidebar = ({ filter, changeHandler, priceChangeHandler }) => {
             </ul>
           </div>
         </div>
+
         <div className="filter-item">
           <div className="shop-filter-item">
-            <h2>Size</h2>
+            <h2>Kích thước</h2>
             <ul>
               <li>
                 <label className="topcoat-radio-button__label">
-                  All Size
+                  Tất cả kích thước
                   <input
                     checked={filter.size === ""}
                     type="radio"
@@ -99,7 +90,7 @@ const FilterSidebar = ({ filter, changeHandler, priceChangeHandler }) => {
                 </label>
               </li>
               {sizes.map((size) => (
-                <li>
+                <li key={size}>
                   <label className="topcoat-radio-button__label">
                     {size}
                     <input
@@ -116,13 +107,14 @@ const FilterSidebar = ({ filter, changeHandler, priceChangeHandler }) => {
             </ul>
           </div>
         </div>
+
         <div className="filter-item">
           <div className="shop-filter-item color">
-            <h2> Color</h2>
+            <h2>Màu sắc</h2>
             <div className="color-name">
               <ul>
                 {colors.map((color) => (
-                  <li>
+                  <li key={color}>
                     <input
                       id={color}
                       onChange={changeHandler}
@@ -138,41 +130,6 @@ const FilterSidebar = ({ filter, changeHandler, priceChangeHandler }) => {
                 ))}
               </ul>
             </div>
-          </div>
-        </div>
-        <div className="filter-item">
-          <div className="shop-filter-item">
-            <h2>Brand</h2>
-            <ul>
-              <li>
-                <label className="topcoat-radio-button__label">
-                  All Brand
-                  <input
-                    checked={filter.brand === ""}
-                    type="radio"
-                    value=""
-                    onChange={changeHandler}
-                    name="brand"
-                  />
-                  <span className="topcoat-radio-button"></span>
-                </label>
-              </li>
-              {brands.map((brand) => (
-                <li>
-                  <label className="topcoat-radio-button__label">
-                    {brand}
-                    <input
-                      checked={filter.brand === brand}
-                      type="radio"
-                      value={brand}
-                      onChange={changeHandler}
-                      name="brand"
-                    />
-                    <span className="topcoat-radio-button"></span>
-                  </label>
-                </li>
-              ))}
-            </ul>
           </div>
         </div>
       </div>
