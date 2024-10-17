@@ -73,7 +73,7 @@ class Header extends Component {
                   <ul className="nav navbar-nav me-auto mb-2 mb-lg-0">
                     <li>
                       <Link onClick={ClickHandler} className="active" to="/">
-                        Home
+                        Trang Chủ
                       </Link>
                       {/* <ul className="sub-menu">
                         <li>
@@ -95,7 +95,7 @@ class Header extends Component {
                     </li> */}
                     <li>
                       <Link onClick={ClickHandler} to="/shop">
-                        Shop
+                        Cửa Hàng
                       </Link>
                     </li>
                     <li className="menu-item-has-children">
@@ -105,17 +105,17 @@ class Header extends Component {
                       <ul className="sub-menu">
                         <li>
                           <Link onClick={ClickHandler} to="/cart">
-                            Cart
+                            Giỏ Hàng
                           </Link>
                         </li>
                         <li>
                           <Link onClick={ClickHandler} to="/wishlist">
-                            Wishlist
+                            Yêu Thích
                           </Link>
                         </li>
                         <li>
                           <Link onClick={ClickHandler} to="/checkout">
-                            Checkout
+                            Thanh Toán
                           </Link>
                         </li>
                         <li>
@@ -224,7 +224,7 @@ class Header extends Component {
                     </li>
                     <li>
                       <Link onClick={ClickHandler} to="/contact">
-                        Contact
+                        Liên Hệ
                       </Link>
                     </li>
                     <li>
@@ -233,12 +233,12 @@ class Header extends Component {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        Custom
+                        Tạo Quà Tặng
                       </a>
                     </li>
                     <li>
                       <Link onClick={ClickHandler} to="/subscription">
-                        Plan
+                        Gói
                       </Link>
                     </li>
                   </ul>
@@ -265,27 +265,27 @@ class Header extends Component {
                       <ul>
                         <li>
                           <Link onClick={ClickHandler} to="/login">
-                            Login
+                            Đăng Nhập
                           </Link>
                         </li>
                         <li>
                           <Link onClick={ClickHandler} to="/register">
-                            Register
+                            Đăng Ký
                           </Link>
                         </li>
                         <li>
                           <Link onClick={ClickHandler} to="/cart">
-                            Cart
+                            Giỏ Hàng
                           </Link>
                         </li>
                         <li>
                           <Link onClick={ClickHandler} to="/wishlist">
-                            Wishlist
+                            Yêu Thích
                           </Link>
                         </li>
                         <li>
                           <Link onClick={ClickHandler} to="/checkout">
-                            Checkout
+                            Thanh Toán
                           </Link>
                         </li>
                       </ul>

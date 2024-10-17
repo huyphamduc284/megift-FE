@@ -25,12 +25,12 @@ const Product = ({ products, addToCartProduct, addToWishListProduct }) => {
       <div className="container">
         <div className="row">
           <div className="col-lg-6 offset-lg-3">
-            <div className="section-title">
-              <h2>Exclusive Jewelry Collection</h2>
+            <div className="section-title ">
+              <h2 className="">Bộ Sưu Tập Trang Sức Độc Quyền</h2>
               <p>
-                Discover the elegance of our handcrafted necklaces, rings, and
-                more. Each piece is carefully curated to reflect timeless beauty
-                and sophistication.
+                Khám phá sự tinh tế của những chiếc vòng cổ, nhẫn và các sản
+                phẩm khác được chế tác thủ công. Mỗi sản phẩm đều được lựa chọn
+                kỹ lưỡng để phản ánh vẻ đẹp vượt thời gian và sự sang trọng.
               </p>
             </div>
           </div>
@@ -48,7 +48,7 @@ const Product = ({ products, addToCartProduct, addToWishListProduct }) => {
                           <button
                             data-bs-toggle="tooltip"
                             data-bs-html="true"
-                            title="Add to Cart"
+                            title="Thêm vào giỏ hàng"
                             onClick={() => addToCartProduct(product)}
                           >
                             <i className="fi flaticon-shopping-cart"></i>
@@ -58,7 +58,7 @@ const Product = ({ products, addToCartProduct, addToWishListProduct }) => {
                           <button
                             data-bs-toggle="tooltip"
                             data-bs-html="true"
-                            title="Quick View"
+                            title="Xem nhanh"
                             onClick={() => handleClickOpen(product)}
                           >
                             <i className="fi ti-eye"></i>
@@ -68,7 +68,7 @@ const Product = ({ products, addToCartProduct, addToWishListProduct }) => {
                           <button
                             data-bs-toggle="tooltip"
                             data-bs-html="true"
-                            title="Add to Wishlist"
+                            title="Thêm vào danh sách yêu thích"
                             onClick={() => addToWishListProduct(product)}
                           >
                             <i className="fi flaticon-like"></i>

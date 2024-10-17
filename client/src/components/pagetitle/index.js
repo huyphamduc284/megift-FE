@@ -13,7 +13,7 @@ const PageTitle = (props) => {
               <h2>{props.pageTitle}</h2>
               <ul>
                 <li>
-                  <Link to="/">Home</Link>
+                  <Link to="/">Trang Chủ</Link>
                 </li>
                 <li>
                   <span>{props.pagesub}</span>

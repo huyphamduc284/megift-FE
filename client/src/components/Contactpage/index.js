@@ -8,14 +8,14 @@ const Contactpage = () => {
         <div className="row">
           <div className="col col-lg-6 col-12">
             <div className="section-title-s3 section-title-s5">
-              <h2>Our Contacts</h2>
+              <h2>Liên Hệ</h2>
             </div>
             <div className="contact-details">
               <p>
-                At Megift, we specialize in offering high-quality, handcrafted
-                jewelry pieces designed to bring elegance and beauty to your
-                life. Our passion for unique designs ensures that every piece is
-                crafted with care and precision.
+                Tại Megift, chúng tôi chuyên cung cấp các sản phẩm trang sức thủ
+                công chất lượng cao, được thiết kế để mang lại sự tinh tế và vẻ
+                đẹp cho cuộc sống của bạn. Đam mê với những thiết kế độc đáo
+                giúp chúng tôi tạo ra từng sản phẩm với sự chăm chút và tỉ mỉ.
               </p>
 
               <ul>
@@ -23,7 +23,7 @@ const Contactpage = () => {
                   <div className="icon">
                     <i className="ti-location-pin"></i>
                   </div>
-                  <h5>Our Location</h5>
+                  <h5>Địa Chỉ</h5>
                   <p>
                     Lô E2a-7, Đường D1, Đ. D1, Long Thạnh Mỹ, Thành Phố Thủ Đức,
                     Hồ Chí Minh
@@ -33,7 +33,7 @@ const Contactpage = () => {
                   <div className="icon">
                     <i className="ti-mobile"></i>
                   </div>
-                  <h5>Phone</h5>
+                  <h5>Điện Thoại</h5>
                   <p>+84 822 882 419</p>
                 </li>
                 <li>
@@ -49,7 +49,7 @@ const Contactpage = () => {
           <div className="col col-lg-6 col-12">
             <div className="contact-form-area">
               <div className="section-title-s3 section-title-s5">
-                <h2>Quick Contact Form</h2>
+                <h2>Form Liên Hệ Nhanh</h2>
               </div>
               <div className="contact-form">
                 <ContactForm />

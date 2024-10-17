@@ -1,0 +1,31 @@
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.countdown-box {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  min-width: 60px;
+}
+
+.countdown-box span {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.countdown-box small {
+  font-size: 14px;
+  color: #666;
+}
+
+.separator {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}

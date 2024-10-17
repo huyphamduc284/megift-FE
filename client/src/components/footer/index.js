@@ -20,8 +20,8 @@ const Footer = (props) => {
                   </Link>
                 </div>
                 <p>
-                  We offer a stunning range of handcrafted jewelry, designed to
-                  add elegance to any occasion.
+                  "Chúng tôi cung cấp một bộ sưu tập trang sức thủ công tuyệt
+                  đẹp, được thiết kế để thêm phần sang trọng cho mọi dịp."
                 </p>
 
                 <ul>
@@ -51,7 +51,7 @@ const Footer = (props) => {
             <div className="col col-lg-3 col-md-6 col-sm-12 col-12">
               <div className="widget tp-service-link-widget">
                 <div className="widget-title">
-                  <h3>Contact </h3>
+                  <h3>Liên Hệ </h3>
                 </div>
                 <div className="contact-ft">
                   <ul>
@@ -73,27 +73,27 @@ const Footer = (props) => {
             <div className="col col-lg-3 col-md-6 col-sm-12 col-12">
               <div className="widget link-widget">
                 <div className="widget-title">
-                  <h3>My Account</h3>
+                  <h3>Tài Khoản</h3>
                 </div>
                 <ul>
                   <li>
                     <Link onClick={ClickHandler} to="/project">
-                      Our Projects
+                      Dự Án
                     </Link>
                   </li>
                   <li>
                     <Link onClick={ClickHandler} to="/shop">
-                      Our Shop
+                      Cửa hàng
                     </Link>
                   </li>
                   <li>
                     <Link onClick={ClickHandler} to="/wishlist">
-                      Wishlist
+                      Yêu Thích
                     </Link>
                   </li>
                   <li>
                     <Link onClick={ClickHandler} to="/checkout">
-                      Checkout
+                      Thanh Toán
                     </Link>
                   </li>
                 </ul>
@@ -102,9 +102,9 @@ const Footer = (props) => {
             <div className="col col-lg-3 col-md-6 col-sm-12 col-12">
               <div className="widget newsletter-widget">
                 <div className="widget-title">
-                  <h3>Newsletter</h3>
+                  <h3>Email</h3>
                 </div>
-                <p>You will be notified when somthing new will be appear.</p>
+                <p>Bạn sẽ được thông báo nếu có sản phẩm mới.</p>
                 <form>
                   <div className="input-1">
                     <input
