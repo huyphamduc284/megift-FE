@@ -1,7 +1,7 @@
 /*---------------------------
 	Fonts
 ----------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Lora:wght@400;700&display=swap');
 
 @font-face {
     font-family: 'Conv_Now-Bold';
@@ -39,12 +39,11 @@
 }
 
 
-// fonts
 $base-font-size: 15;
-$base-font: 'Poppins', sans-serif;
-$heading-font: 'Now';
-$heading-font-s2: 'Conv_Now-Bold';
-$heading-font-s3: 'Barlow Condensed', sans-serif;
+$base-font: 'Roboto', sans-serif;
+$heading-font: 'Lora', serif;
+$heading-font-s2: 'Lora', serif;
+$heading-font-s3: 'Roboto', sans-serif;
 
 
 

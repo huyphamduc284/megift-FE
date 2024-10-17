@@ -6,7 +6,7 @@ import Scrollbar from "../../components/scrollbar";
 import { Button, Grid } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import {totalPrice} from "../../utils";
+import { totalPrice } from "../../utils";
 import {
   removeFromCart,
   incrementQuantity,
@@ -19,7 +19,6 @@ const CartPage = (props) => {
   };
 
   const { carts } = props;
-
 
   return (
     <Fragment>
@@ -83,8 +82,12 @@ const CartPage = (props) => {
                                   </Grid>
                                 </div>
                               </td>
-                              <td className="ptice">${catItem.qty * catItem.price}</td>
-                              <td className="stock">${catItem.qty * catItem.price}</td>
+                              <td className="ptice">
+                                {catItem.qty * catItem.price} VND
+                              </td>
+                              <td className="stock">
+                                {catItem.qty * catItem.price} VND
+                              </td>
                               <td className="action">
                                 <ul>
                                   <li
@@ -125,7 +128,7 @@ const CartPage = (props) => {
                         Total product<span>( {carts.length} )</span>
                       </li>
                       <li>
-                        Sub Price<span>${totalPrice(carts)}</span>
+                        Sub Price<span>{totalPrice(carts)} VND</span>
                       </li>
                       <li>
                         Vat<span>$0</span>

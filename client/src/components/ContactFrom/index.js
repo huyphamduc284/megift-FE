@@ -12,8 +12,8 @@ class ContactForm extends Component {
   };
 
   componentDidMount() {
-    // Initialize EmailJS with your public key
-    emailjs.init("vKP5GXWIpSAKa_L24"); // Replace with your EmailJS public key
+    // Khởi tạo EmailJS với public key của bạn
+    emailjs.init("vKP5GXWIpSAKa_L24"); // Thay thế bằng public key EmailJS của bạn
   }
 
   changeHandler = (e) => {
@@ -31,12 +31,12 @@ class ContactForm extends Component {
 
     const { name, email, subject, lastname, message, error } = this.state;
 
-    // Validate fields
-    if (name === "") error.name = "Please enter your name";
-    if (email === "") error.email = "Please enter your email";
-    if (subject === "") error.subject = "Please enter your subject";
-    if (lastname === "") error.lastname = "Please enter your lastname";
-    if (message === "") error.message = "Please enter your message";
+    // Kiểm tra các trường thông tin
+    if (name === "") error.name = "Vui lòng nhập tên của bạn";
+    if (email === "") error.email = "Vui lòng nhập email của bạn";
+    if (subject === "") error.subject = "Vui lòng nhập chủ đề";
+    if (lastname === "") error.lastname = "Vui lòng nhập họ của bạn";
+    if (message === "") error.message = "Vui lòng nhập tin nhắn";
 
     if (
       error.name ||
@@ -49,13 +49,13 @@ class ContactForm extends Component {
       return;
     }
 
-    // Send email via EmailJS
+    // Gửi email qua EmailJS
     emailjs
       .sendForm(
-        "service_z5nlp0l", // Replace with your EmailJS service ID
-        "template_bakueop", // Replace with your EmailJS template ID
+        "service_z5nlp0l", // Thay thế bằng service ID của bạn
+        "template_bakueop", // Thay thế bằng template ID của bạn
         e.target,
-        "vKP5GXWIpSAKa_L24" // Replace with your EmailJS public key
+        "vKP5GXWIpSAKa_L24" // Thay thế bằng public key của bạn
       )
       .then(
         (result) => {
@@ -68,11 +68,11 @@ class ContactForm extends Component {
             message: "",
             error: {},
           });
-          alert("Message sent successfully!"); // Show a success message
+          alert("Tin nhắn đã được gửi thành công!"); // Thông báo khi gửi thành công
         },
         (error) => {
           console.log(error.text);
-          alert("Failed to send message. Please try again later."); // Show an error message
+          alert("Gửi tin nhắn thất bại. Vui lòng thử lại sau."); // Thông báo khi gửi thất bại
         }
       );
   };
@@ -90,7 +90,7 @@ class ContactForm extends Component {
                 onChange={this.changeHandler}
                 type="text"
                 name="name"
-                placeholder="Name"
+                placeholder="Tên"
                 required
               />
               <p>{error.name ? error.name : ""}</p>
@@ -103,7 +103,7 @@ class ContactForm extends Component {
                 onChange={this.changeHandler}
                 type="text"
                 name="lastname"
-                placeholder="Lastname"
+                placeholder="Họ"
                 required
               />
               <p>{error.lastname ? error.lastname : ""}</p>
@@ -129,7 +129,7 @@ class ContactForm extends Component {
                 onChange={this.changeHandler}
                 type="text"
                 name="subject"
-                placeholder="Subject"
+                placeholder="Chủ đề"
                 required
               />
               <p>{error.subject ? error.subject : ""}</p>
@@ -141,7 +141,7 @@ class ContactForm extends Component {
                 value={message}
                 onChange={this.changeHandler}
                 name="message"
-                placeholder="Message"
+                placeholder="Tin nhắn"
                 required
               ></textarea>
               <p>{error.message ? error.message : ""}</p>
@@ -150,7 +150,7 @@ class ContactForm extends Component {
           <div className="col-lg-12">
             <div className="form-submit">
               <button type="submit" className="theme-btn">
-                Send Message
+                Gửi Tin Nhắn
               </button>
             </div>
           </div>
