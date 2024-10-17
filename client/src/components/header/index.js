@@ -324,7 +324,7 @@ class Header extends Component {
                               <div className="mini-cart-item-des">
                                 <p>{cart.title} </p>
                                 <span className="mini-cart-item-price">
-                                  ${cart.price} x {cart.qty}
+                                  {cart.price} x {cart.qty}
                                 </span>
                                 <span className="mini-cart-item-quantity">
                                   <button
@@ -342,7 +342,7 @@ class Header extends Component {
                       </div>
                       <div className="mini-cart-action clearfix">
                         <span className="mini-checkout-price">
-                          Total: ${totalPrice(carts)}
+                          Total: {totalPrice(carts)} VND
                         </span>
                         <div className="mini-btn">
                           <Link
@@ -350,14 +350,14 @@ class Header extends Component {
                             to="/checkout"
                             className="view-cart-btn s1"
                           >
-                            Checkout
+                            Thanh Toán
                           </Link>
                           <Link
                             onClick={ClickHandler}
                             to="/cart"
                             className="view-cart-btn"
                           >
-                            View Cart
+                            Giỏ Hàng
                           </Link>
                         </div>
                       </div>
