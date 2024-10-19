@@ -26,6 +26,7 @@ import ForgotPassword from "../ForgotPassword";
 import Canvas from "../../canvas";
 import CustomPage from "../CustomPage/custom";
 import Subscription from "../SubscriptionPage";
+import CheckoutSubscription from "../../components/Subscription/checkout_subscription";
 
 const AllRoute = () => {
   return (

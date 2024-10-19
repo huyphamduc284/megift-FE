@@ -36,7 +36,7 @@ const ProductSingleSec = ({ item, addToCart }) => {
             <div className="col-lg-7">
               <div className="product-single-content">
                 <h5>{item.title}</h5>
-                <h6>${item.price}</h6>
+                <h6>{item.price}</h6>
                 <ul className="rating">
                   <li>
                     <i className="fa fa-star" aria-hidden="true"></i>
@@ -55,12 +55,13 @@ const ProductSingleSec = ({ item, addToCart }) => {
                   </li>
                 </ul>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                  quis ultrices lectus lobortis, dolor et tempus porta, leo mi
-                  efficitur ante, in varius felis sem ut mauris. Proin volutpat
-                  lorem inorci sed vestibulum tempus. Lorem ipsum dolor sit
-                  amet, consectetur adipiscing elit. Aliquam hendrerit sem porta
-                  dolor congue sagittis Lorem ipsum dolor sit amet consectetur.
+                  Sản phẩm của chúng tôi được chế tác tinh xảo từ những nguyên
+                  liệu chất lượng cao, đảm bảo mang lại sự hài lòng tuyệt đối
+                  cho khách hàng. Với thiết kế hiện đại và màu sắc bắt mắt, sản
+                  phẩm không chỉ phù hợp cho nhu cầu sử dụng hàng ngày mà còn là
+                  lựa chọn tuyệt vời để làm quà tặng. Mỗi chi tiết đều được chăm
+                  chút tỉ mỉ để mang lại trải nghiệm tốt nhất cho người dùng.
+                  Sản phẩm có độ bền cao, dễ vệ sinh và an toàn cho sức khỏe.
                 </p>
                 <div className="product-filter-item color">
                   <div className="color-name">
