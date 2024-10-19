@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./index.css";
 
 const plans = [
@@ -53,7 +53,15 @@ const plans = [
   },
 ];
 
-const PricingPlan = ({ plan }) => {
+// Simulate payment processing
+const handlePayment = (plan) => {
+  alert(`Bạn đã chọn thanh toán cho: ${plan.name} với giá ${plan.price}`);
+  // Here you can add actual payment gateway integration (e.g., VNPay, Stripe, PayPal, etc.)
+  // Make API call to process the payment.
+  console.log("Processing payment for plan: ", plan);
+};
+
+const PricingPlan = ({ plan, onSubscribe }) => {
   return (
     <div className={`plan-card ${plan.mostPopular ? "popular" : ""}`}>
       {plan.mostPopular && <div className="most-popular">PHỔ BIẾN NHẤT</div>}
@@ -69,7 +77,9 @@ const PricingPlan = ({ plan }) => {
         </ul>
       </div>
       <div className="plan-actions">
-        <button className="subscribe-button">Đăng ký ngay</button>
+        <button className="subscribe-button" onClick={() => onSubscribe(plan)}>
+          Đăng ký ngay
+        </button>
         <p className="cancel-anytime">Hủy bất cứ lúc nào</p>
       </div>
     </div>
@@ -118,18 +128,30 @@ const PricingTable = () => {
 };
 
 const ChooseYourPlan = () => {
+  const [selectedPlan, setSelectedPlan] = useState(null);
+
+  const onSubscribe = (plan) => {
+    setSelectedPlan(plan);
+    handlePayment(plan); // Handle payment when subscribing to a plan
+  };
+
   return (
     <div className="pricing-section">
       <h2 className="title">CHỌN GÓI CỦA BẠN</h2>
       <div className="popular-plan-container">
-        <PricingPlan plan={plans[0]} />
+        <PricingPlan plan={plans[0]} onSubscribe={onSubscribe} />
       </div>
       <div className="plans-container">
         {plans.slice(1).map((plan, index) => (
-          <PricingPlan key={index} plan={plan} />
+          <PricingPlan key={index} plan={plan} onSubscribe={onSubscribe} />
         ))}
       </div>
       <PricingTable />
+      {selectedPlan && (
+        <div className="selected-plan-info">
+          <h3>Bạn đã chọn gói: {selectedPlan.name}</h3>
+        </div>
+      )}
     </div>
   );
 };

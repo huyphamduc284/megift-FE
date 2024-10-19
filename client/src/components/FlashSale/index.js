@@ -90,8 +90,8 @@ const FlashSale = ({ products, addToCartProduct, addToWishListProduct }) => {
                       <div className="product-btm">
                         <div className="product-price">
                           <ul>
-                            <li>${product.price}</li>
-                            <li>${product.delPrice}</li>
+                            <li>{product.price}</li>
+                            <li>{product.delPrice}</li>
                           </ul>
                         </div>
                         <div className="product-ratting">
